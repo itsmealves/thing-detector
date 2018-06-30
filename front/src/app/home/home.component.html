@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="left-column">
+        <h1>Vamos lá! Envie uma imagem.</h1>
+
+        <div class="form-group">
+            <label for="file">Escolha um arquivo</label>
+            <input #fileInput type="file"
+                   id="file"
+                   (change)="handleFileInput($event.target.files)">
+        </div>
+
+    </div>
+
+    <div class="right-column">
+
+
+    </div>
+</div>
+
+<div class="waiting" [class.not-anymore]="done" >
+    <div class="loader">
+    </div>
+</div>

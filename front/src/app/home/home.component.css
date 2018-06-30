@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-flow: line nowrap;
+    height: 100vh;
+}
+
+.left-column {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    background: #45ADA8;
+}
+
+.right-column {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #594f4f;
+}
