@@ -1,16 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css?family=Galada|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Signika');
 
 h1 {
-    font-family: 'Galada', cursive;
-    font-size: 350%;
+    font-size: 300%;
+    font-family: 'Lobster', cursive;
 }
 
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Signika', sans-serif;
     font-weight: bold;
     color: #DDD;
 }
@@ -47,4 +47,29 @@ body, html {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ddd;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    padding: 5px;
+    font-family: 'Signika', sans-serif;
+    font-size: 100%;
+    color: #DDD;
+    border: 1px solid #ddd;
+    background: rgba(255,255,255,0.0);
+    margin: 0 0 10px 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #DDD;
+    opacity: 1; /* Firefox */
 }

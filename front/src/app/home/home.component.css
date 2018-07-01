@@ -2,21 +2,49 @@
     display: flex;
     flex-flow: line nowrap;
     height: 100vh;
+    text-align: center;
 }
 
-.left-column {
+.left-column, .right-column {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column nowrap;
+}
+
+.left-column {
     background: #45ADA8;
 }
 
 .right-column {
+    background: #594f4f;
+}
+
+.detection {
+    max-width: 80%;
+}
+
+.user-form {
+    width: 100%;
+    display: flex;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.user-form > div {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #594f4f;
+    flex-flow: column nowrap;
+}
+
+.inline-input {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
 }

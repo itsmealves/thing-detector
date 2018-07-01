@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 @Injectable({
     providedIn: 'root'
@@ -14,7 +14,16 @@ export class FileService {
             const formData: FormData = new FormData();
             formData.append('file', file, file.name);
 
-            this.http.post(this.baseUrl + 'image', formData)
+            this.http.post(this.baseUrl + 'file', formData)
+                .subscribe(resolve, reject);
+        });
+    }
+
+    public query(key: string) {
+        return new Promise((resolve, reject) => {
+            const params = new HttpParams().set('key', key);
+
+            this.http.get(this.baseUrl + 'file', {params})
                 .subscribe(resolve, reject);
         });
     }
