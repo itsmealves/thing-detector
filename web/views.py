@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 
 import uuid
 import requests
-from django.core.files.storage import default_storage
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 from django.views import View
