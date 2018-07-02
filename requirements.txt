@@ -20,3 +20,8 @@ requests == 2.18.4
 setuptools == 39.2.0
 
 psycopg2 == 2.7.5
+
+gunicorn == 19.8.1
+
+django-heroku == 0.3.1
+
