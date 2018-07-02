@@ -23,5 +23,3 @@ psycopg2 == 2.7.5
 
 gunicorn == 19.8.1
 
-django-heroku == 0.3.1
-
