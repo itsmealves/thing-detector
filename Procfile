@@ -1,1 +1,1 @@
-web: gunicorn thing-detector.wsgi
+web: gunicorn thing_detector.wsgi
