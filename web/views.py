@@ -6,7 +6,7 @@ import requests
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 from django.views import View
-from models import Detection
+from web.models import Detection
 
 # Create your views here.
 def index(request):
@@ -45,7 +45,7 @@ class FileView(View):
 
         files = {'file': file}
         payload = {'filename': file_name}
-        response = requests.post('http://localhost:4000', data=payload, files=files).json()
+        response = requests.post('http://ec2-18-219-14-13.us-east-2.compute.amazonaws.com:8000', data=payload, files=files).json()
         url = response['url']
 
         detection = Detection(key=key, url=url)
