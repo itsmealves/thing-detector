@@ -1,4 +1,4 @@
-import views
+from web import views
 from django.conf.urls import url
 
 urlpatterns = [
